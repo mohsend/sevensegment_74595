@@ -1,6 +1,6 @@
-# Arduino shift-register seven segment driver
+# Shift-register seven segment driver
 
-Libraries and sketches to drive multiple 7 using daisy-chained shift-registers (74595).
+Library and example sketches to drive multiple seven segments using daisy-chained shift-registers (74595).
 
 ## Use
 
@@ -12,7 +12,7 @@ Libraries and sketches to drive multiple 7 using daisy-chained shift-registers (
 - `void displayASCII(Character, Digit, Dot = 0)`
 - `clearDisplay()`
 
-## 
+## Example
 
 ```arduino
 #include <ss_sr.h>
@@ -29,7 +29,7 @@ void setup() {
 }
 
 void loop() {
-   static char buf[5];
+  static char buf[5];
   displayTicker("     Will display the ascii table from 0x20 to 0x60. Format:  Character Hex Value    ");
   for (byte i = 0x20; i < 0x60; i++) {
     static char buf[5];
